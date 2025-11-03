@@ -14,13 +14,13 @@ The site is automatically deployed through a **CI/CD pipeline** using **AWS Code
 
 ## 2. Architecture
 
-+------------+ +-------------+ +----------------+
-| GitHub Repo| ---> | CodePipeline| ---> | S3 Bucket |
-| (Source) | | (CI/CD) | | (Hosting Site) |
-+------------+ +-------------+ +----------------+
-^ |
-| |
-Developer commits -------+
+   +-------------+          +---------------+          +----------------+
+   | GitHub Repo |  ---->   | CodePipeline  |  ---->   | S3 Bucket      |
+   |  (Source)   |          |    (CI/CD)    |          | (Hosting Site) |
+   +-------------+          +---------------+          +----------------+
+          ^                          |
+          |                          |
+   Developer commits ----------------+
 
 
 - **GitHub Repo (Source Stage):** Contains the `index.html` file and other static assets.
