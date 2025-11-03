@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron Lo - Resume</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1f2937;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 0.25rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .job {
+            margin-bottom: 1rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .job-company {
+            color: #555;
+        }
+
+        .date {
+            font-style: italic;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            background: #f1f5f9;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aaron Lo</h1>
+        <p>
+            <a href="mailto:alo76@my.bcit.ca">alo76@my.bcit.ca</a> |
+            <a href="tel:17786885886">778-688-5886</a> |
+            <a href="https://www.linkedin.com/in/aaronawylo/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/aaronawylo" target="_blank">GitHub</a>
+        </p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, Java, HTML/CSS, JavaScript (Express/Node)</li>
+                <li><strong>Tools:</strong> GitHub, Kafka, MongoDB, Microsoft Office (Excel, Word)</li>
+                <li><strong>Other:</strong> SQL/NoSQL, Agile Development, SDLC Process, Test-driven Development</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="job">
+                <div class="job-title">QuickQueue | Web App | Academic Project</div>
+                <div class="job-company">Project Lead and Developer</div>
+                <ul>
+                    <li>A mobile-first app with an AI chatbot recommending video games: <a
+                            href="http://xkdqzglrwm.ca02.qoddiapp.com/" target="_blank">Demo</a></li>
+                    <li>Led a team of four using Agile methodology (scrums, retrospectives, story planning)</li>
+                    <li>Built with Node.js, Express, MongoDB, and IGDB API</li>
+                    <li>Designed entire front end with Bootstrap and CSS</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">CAHS Website | Python App | Academic Project</div>
+                <div class="job-company">Developer</div>
+                <ul>
+                    <li>Developed a user-friendly website for uploading and managing data</li>
+                    <li>Implemented Excel data sanitization before uploading to Clickhouse</li>
+                    <li>Enabled query-based database interaction for lab staff</li>
+                    <li>Built using Django, Clickhouse, and deployed on Render</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+
+            <div class="job">
+                <div class="job-title">QA Software Engineer</div>
+                <div class="job-company">Incognito Software Systems</div>
+                <div class="date">Jan 2024 - Dec 2024</div>
+                <ul>
+                    <li>Developed and executed automated and manual tests for multiple services</li>
+                    <li>Rehauled company’s Ansible Playbook</li>
+                    <li>Initiated migration from Selenium to Playwright</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Flight Instructor</div>
+                <div class="job-company">Pacific Flying Club / Freelance / Pacific Rim Aviation Academy</div>
+                <div class="date">Nov 2015 - Dec 2022</div>
+                <ul>
+                    <li>Maintained an 87% student flight test pass rate</li>
+                    <li>Evaluated student readiness for flight exams</li>
+                    <li>Provided professional and assertive instruction for diverse learners</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Computer Systems Technology Diploma</strong> — BCIT (Jan 2023 - Present)</li>
+                <li><strong>Airline and Flight Operations Commercial Pilot Diploma</strong> — BCIT (May 2013 - Dec 2014)
+                </li>
+                <li><strong>Bachelor of Arts, Psychology</strong> — UBC (May 2008 - Dec 2012)</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Aaron Lo — Hosted on AWS S3
+    </footer>
+</body>
+
+</html>

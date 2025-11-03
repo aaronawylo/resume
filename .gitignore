@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node / Build artifacts (optional if using build tools later)
+node_modules/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
