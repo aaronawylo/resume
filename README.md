@@ -50,12 +50,11 @@ The site is automatically deployed through a **CI/CD pipeline** using **AWS Code
 1. Go to AWS Console → CodePipeline → Create Pipeline.
 2. Name the pipeline (e.g., `ResumeWebsitePipeline`).
 3. **Source Stage:** Connect to your GitHub repo and select the branch (e.g., `main`).
-4. **Build Stage:** Optional for static sites. Can skip or use CodeBuild if you want to process assets.
-5. **Deploy Stage:** Choose **Amazon S3** as the deployment target.
+4. **Deploy Stage:** Choose **Amazon S3** as the deployment target.
    - Select your S3 bucket created in Step 1.
 
 ### Step 4: Grant Permissions
-- Ensure CodePipeline and CodeBuild roles have permissions to access your S3 bucket.
+- Ensure CodePipeline roles have permissions to access your S3 bucket.
 - Example permissions: `s3:PutObject`, `s3:GetObject`, `s3:ListBucket`.
 
 ### Step 5: Test the Pipeline
